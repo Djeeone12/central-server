@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<b>GET: Please input the ID</b>
+<p>
+<form action=/server/node-sql-students-get/ method=GET>
+    ID: <input name=GetID>
+
+<input type=submit></form>
+<b>POST: Please input the ID and required model</b>
+<p>
+
+
+<form action=/server/node-sql-students-post/ method=POST>
+    {% csrf_token %}
+    MODEL: <textarea rows="10" cols="50" name="PostMODEL"></textarea>
+
+<input type=submit></form>
+
+<b>PUT: Please input the required model</b>
+<p>
+
+
+<form action=/server/node-sql-students-put/ method=PUT>
+    ID: <input name=PutID>
+    MODEL: <textarea rows="10" cols="50" name="PutMODEL"></textarea>
+
+<input type=submit></form>
+
+<b>DELETE: Please input the ID</b>
+<p>
+<form action=/server/node-sql-students-del/ method=GET>
+    ID: <input name=DeleteID>
+
+<input type=submit></form>
+
+</body>
+</html>
